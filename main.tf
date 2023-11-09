@@ -12,7 +12,7 @@ resource "aws_cloudwatch_metric_alarm" "rds_io_usage" {
   ## condictions
   comparison_operator = "GreaterThanOrEqualToThreshold"
   statistic           = "Maximum"
-  threshold           = 1
+  threshold           = 20
   evaluation_periods  = 2
 
   ## alarm 
