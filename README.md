@@ -6,8 +6,8 @@ This module creates a CloudWatch alarm for all given RDS database instances that
 | Key | Value |
 |------|---------|
 | Comparison operator | Greater Than Or Equal To Threshold |
-| Statistic |  |
-| Threshold |  |
+| Statistic | Maximum |
+| Threshold | 1 - normal is less than 0.1 |
 | Evaluation period | 2 seconds |
 
 ## Usage:
