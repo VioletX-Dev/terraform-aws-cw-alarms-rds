@@ -8,3 +8,9 @@ variable "rds_names" {
   type        = set(string)
 
 }
+
+variable "storage_space_metric_name" {
+  description = "RDS database storage space metric names. e.g. `FreeStorageSpace` on MySQL and PostgreSQL databases, `FreeLocalStorage` on Aurora MySQL and Aurora PostgreSQL databases, `AuroraVolumeBytesLeftTotal` on Aurora MySQL Databases."
+  type        = string
+
+}
